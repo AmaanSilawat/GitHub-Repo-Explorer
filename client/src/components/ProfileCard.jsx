@@ -9,7 +9,7 @@ function ProfileCard({ user }) {
         className="avatar"
       />
 
-      <h2>{user.name || user.login}</h2>
+      <h1>{user.name || user.login}</h1>
 
       <p className="bio">{user.bio}</p>
 

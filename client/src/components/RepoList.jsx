@@ -4,6 +4,7 @@ import "./RepoList.css";
 
 function RepoList({ repos }) {
   const [sortBy, setSortBy] = useState("stars");
+  const [visibleCount, setVisibleCount] = useState(6);
 
   const sortedRepos = [...repos].sort((a, b) => {
     if (sortBy === "stars") {
@@ -15,35 +16,68 @@ function RepoList({ repos }) {
     }
 
     if (sortBy === "updated") {
-      return new Date(b.updated_at) - new Date(a.updated_at);
+      return (
+        new Date(b.updated_at) -
+        new Date(a.updated_at)
+      );
     }
 
     return 0;
   });
 
+  const visibleRepos =
+    sortedRepos.slice(0, visibleCount);
+
   return (
     <>
       <div className="repo-header">
-        <h2>Repositories ({repos.length})</h2>
+        <h2>
+          Repositories ({repos.length})
+        </h2>
 
         <select
           value={sortBy}
-          onChange={(e) => setSortBy(e.target.value)}
+          onChange={(e) =>
+            setSortBy(e.target.value)
+          }
         >
-          <option value="stars">Sort by Stars</option>
-          <option value="name">Sort by Name</option>
-          <option value="updated">Sort by Updated</option>
+          <option value="stars">
+            Sort by Stars
+          </option>
+
+          <option value="name">
+            Sort by Name
+          </option>
+
+          <option value="updated">
+            Sort by Updated
+          </option>
         </select>
       </div>
 
       <div className="repo-grid">
-        {sortedRepos.map((repo) => (
+        {visibleRepos.map((repo) => (
           <RepoCard
             key={repo.id}
             repo={repo}
           />
         ))}
       </div>
+
+      {visibleCount < repos.length && (
+        <div className="load-more-container">
+          <button
+            className="load-more-btn"
+            onClick={() =>
+              setVisibleCount(
+                visibleCount + 6
+              )
+            }
+          >
+            Load More
+          </button>
+        </div>
+      )}
     </>
   );
 }

@@ -6,3 +6,12 @@ export const getGithubUser = async (username) => {
   const response = await axios.get(`${API_BASE_URL}/${username}`);
   return response.data;
 };
+
+export const searchGithubUsers =
+  async (query) => {
+    const response = await axios.get(
+      `${API_BASE_URL}/search-users/${query}`
+    );
+
+    return response.data;
+  };

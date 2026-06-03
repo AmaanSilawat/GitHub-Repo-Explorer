@@ -28,3 +28,46 @@
   justify-content: space-between;
   margin-top: 15px;
 }
+
+.repo-extra {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #2e4d44;
+}
+
+.repo-extra p {
+  margin: 6px 0;
+}
+
+.repo-extra a {
+  color: #34d399;
+  text-decoration: none;
+}
+
+.repo-card {
+  cursor: pointer;
+  position: relative;
+}
+
+.expand-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  background: rgba(52, 211, 153, 0.15);
+  color: #34d399;
+
+  padding: 4px 8px;
+  border-radius: 6px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.repo-card:hover .expand-tag {
+  opacity: 1;
+}
