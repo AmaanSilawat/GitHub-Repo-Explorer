@@ -16,6 +16,9 @@ https://git-hub-repo-explorer-six.vercel.app
 **Backend API:**
 https://github-repo-explorer-9qcb.onrender.com
 
+**Sample API Endpoint:**
+https://github-repo-explorer-9qcb.onrender.com/api/github/torvalds
+
 ---
 
 # Tech Stack
@@ -81,7 +84,7 @@ Allows secure communication between frontend and backend applications running on
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/AmaanSilawat/GitHub-Repo-Explorer
+git clone https://github.com/AmaanSilawat/GitHub-Repo-Explorer.git
 cd GitHub-Repo-Explorer
 ```
 
@@ -160,7 +163,8 @@ None
   "source": "github",
   "user": {
     "login": "torvalds",
-    "name": "Linus Torvalds"
+    "name": "Linus Torvalds",
+    "followers": 250000
   },
   "repos": []
 }
@@ -262,6 +266,7 @@ GitHub-Repo-Explorer
 * Handle invalid usernames
 * Handle network failures
 * Handle GitHub API rate-limit responses
+* Responsive design for mobile and desktop devices
 
 ## Additional Features
 
@@ -278,4 +283,4 @@ GitHub-Repo-Explorer
 
 # Next Steps
 
-Future improvements would include developer comparison features, advanced repository analytics, richer data visualizations, Redis-based caching for scalability, and automated testing to improve reliability and maintainability.
+Future improvements would include developer comparison features, advanced repository analytics, richer data visualizations, automated testing, and Redis-based caching for improved scalability and maintainability.
