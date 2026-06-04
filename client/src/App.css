@@ -113,3 +113,21 @@ body {
 .top-section > * {
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .app {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .top-section {
+    flex-direction: column;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+}

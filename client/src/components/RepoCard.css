@@ -71,3 +71,19 @@
 .repo-card:hover .expand-tag {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .repo-card {
+    padding: 16px;
+    min-height: auto;
+  }
+
+  .repo-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .expand-tag {
+    display: none;
+  }
+}

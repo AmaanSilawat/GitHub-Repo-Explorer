@@ -2,7 +2,7 @@
 
 ## Project Title & Brief Description
 
-**Exercise Chosen:** GitHub Repository Explorer
+**Exercise 3 Chosen:** GitHub Repository Explorer
 
 GitHub Repo Explorer is a full-stack web application that allows users to search for any GitHub profile and explore detailed account and repository information. The application displays profile details such as avatar, bio, followers, following count, and public repository statistics. Users can browse repositories, sort them by stars, name, or last updated date, view additional repository details through expandable cards, and analyze language usage across repositories through a visual chart. The project uses a React frontend and a Node.js/Express backend with server-side caching to improve performance and reduce unnecessary GitHub API requests.
 
