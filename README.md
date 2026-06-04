@@ -81,7 +81,7 @@ Allows secure communication between frontend and backend applications running on
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/GitHub-Repo-Explorer.git
+git clone https://github.com/AmaanSilawat/GitHub-Repo-Explorer
 cd GitHub-Repo-Explorer
 ```
 
