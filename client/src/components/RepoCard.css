@@ -88,3 +88,11 @@
     display: none;
   }
 }
+
+@media (max-width: 410px) {
+  .repo-card {
+    padding: 16px;
+    min-height: auto;
+    margin-right:4.5%;
+  }
+}
