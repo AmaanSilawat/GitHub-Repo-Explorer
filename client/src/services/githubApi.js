@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5000/api/github";
+const API_BASE_URL = "https://github-repo-explorer-9qcb.onrender.com/api/github";
 
 export const getGithubUser = async (username) => {
   const response = await axios.get(`${API_BASE_URL}/${username}`);
