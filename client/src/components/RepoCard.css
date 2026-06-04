@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 400px) {
   .repo-card {
     padding: 16px;
     min-height: auto;
