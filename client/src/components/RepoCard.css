@@ -76,6 +76,7 @@
   .repo-card {
     padding: 16px;
     min-height: auto;
+    margin-right: 2.5%;
   }
 
   .repo-info {
